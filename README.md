@@ -1,1 +1,1 @@
-[my weather project](https://Bohdan996.github.io/weather-app)
+[WEATHER APP](https://Bohdan996.github.io/weather-app)
