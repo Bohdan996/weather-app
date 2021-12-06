@@ -1,0 +1,136 @@
+.main-content {
+  position: relative;
+  top: -20px;
+
+  @media (min-width: 750px) {
+    top: -40px;
+  }
+
+  @media (max-height: 440px) {
+    padding-top: 30px;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+
+  &__country-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 15px;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 26px;
+
+    @media (min-width: 750px) {
+      font-size: 50px;
+    }
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.temperature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__value {
+    font-size: 19px;
+
+    @media (min-width: 750px) {
+      font-size: 26px;
+    }
+  }
+
+  &__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 23px;
+    font-size: 16px;
+    padding-top: 2px;
+    font-weight: bold;
+    background-color: #fff;
+
+    &:hover {
+      font-size: 15px;
+    }
+
+    &--right {
+      border-top-right-radius: 100%;
+      border-bottom-right-radius: 100%;
+    }
+
+    &--left {
+      border-top-left-radius: 100%;
+      border-bottom-left-radius: 100%;
+      border-right: 1px solid #fff;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+
+    @media (min-width: 750px) {
+      width: 30vw;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+
+    @media (min-width: 750px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.width {
+  min-width: 37px;
+
+  @media (min-width: 750px) {
+    min-width: 60px;
+  }
+}
+
+.error {
+  color: #000;
+  font-size: 30px;
+
+  @media (min-width: 750px) {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,31 @@
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (max-height: 440px) {
+    height: 450px;
+    overflow-y: scroll;
+  }
+
+  &__title {
+    font-family: 'Jua', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    @media (min-width: 750px) {
+      font-size: 70px;
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 35px;
+}

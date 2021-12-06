@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Sarala', sans-serif;
+
+  @media (max-height: 440px) {
+    height: 450px;
+  }
+}
